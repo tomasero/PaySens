@@ -1,0 +1,15 @@
+.body {
+  padding-top: 70px;
+}
+
+.form-row {
+  padding-top: 7px;
+}
+
+.titulo {
+    position: fixed !important;
+    left: 50% !important;
+    top: 50% !important;
+    margin-left: calc(-518px/2) !important;
+    margin-top: calc(-139px/2) !important;
+}

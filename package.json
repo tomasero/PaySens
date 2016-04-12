@@ -1,0 +1,63 @@
+{
+  "name": "node-stripe-charge",
+  "version": "1.0.0",
+  "description": "stripe integration with node and express",
+  "scripts": {
+    "start": "node ./src/server/bin/www",
+    "test": "mocha",
+    "cov": "./node_modules/.bin/istanbul cover _mocha -- -R spec",
+    "send-coverage": "./node_modules/.bin/istanbul cover --report lcovonly ./node_modules/.bin/_mocha && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mjhea0/node-stripe-charge.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "template",
+    "mongo",
+    "twitter",
+    "bootstrap",
+    "bootstrap3",
+    "stripe"
+  ],
+  "author": "Michael Herman <michael@mherman.org>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "chai": "*",
+    "chai-http": "*",
+    "connect-flash": "*",
+    "cookie-parser": "*",
+    "debug": "*",
+    "dotenv": "^2.0.0",
+    "express": "*",
+    "express-session": "*",
+    "moment": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mongoose-q": "*",
+    "morgan": "*",
+    "passport": "*",
+    "passport-local": "*",
+    "passport-stub": "^1.1.1",
+    "serve-favicon": "*",
+    "stripe": "*",
+    "swig": "*"
+  },
+  "devDependencies": {
+    "assert": "*",
+    "coveralls": "*",
+    "gulp": "*",
+    "gulp-jshint": "*",
+    "gulp-mocha": "*",
+    "gulp-nodemon": "*",
+    "istanbul": "*",
+    "jshint": "*",
+    "mocha": "*",
+    "mocha-lcov-reporter": "*",
+    "supertest": "*"
+  }
+}
