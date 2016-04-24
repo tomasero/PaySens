@@ -75,7 +75,9 @@ app.use(express.static(path.join(__dirname, '../', 'client')));
 
 
 // *** mongo *** //
-app.set('dbUrl', config.mongoURI[app.settings.env]);
+var mongoURI = 'mongodb://heroku_3p84852t:8nbsb8844m3b9gn5ur9otaaqtn@ds019101.mlab.com:19101/heroku_3p84852t';
+app.set('dbUrl', config.mongoURI[mongoURI]);
+//app.set('dbUrl', config.mongoURI[app.settings.env]);
 mongoose.connect(app.get('dbUrl'));
 
 
