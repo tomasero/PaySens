@@ -11,18 +11,18 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/products">Products</a></li>
+        <li><a href="/products">Recargas</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {% if user.admin %}
           <li><a href="/auth/admin">Admin</a></li>
-          <li><a href="/auth/profile">Profile</a></li>
+          <li><a href="/auth/profile">Perfíl</a></li>
           <li><a href="/auth/logout">Logout</a></li>
         {% elseif user %}
-          <li><a href="/auth/profile">Profile</a></li>
-          <li><a href="/auth/logout">Logout</a></li>
+          <li><a href="/auth/profile">Perfíl</a></li>
+          <li><a href="/auth/logout">Cierra Sesión</a></li>
         {% else %}
-          <li><a href="/auth/login">Register/Login</a></li>
+          <li><a href="/auth/login">Registrate/Inicia Sesión</a></li>
         {% endif %}
       </ul>
     </div>
